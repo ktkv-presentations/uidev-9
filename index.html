@@ -23,189 +23,757 @@
         <div class="reveal">
             <div class="slides">
                 <section>
-                    <h1>Beautiful presentations</h1>
-                    <h2>New features</h2>
-                    <ul>
-                        <li>Nerd icons </li>
-                        <li>
-                            <code class="js">
-                                (inline) => code("highlighting")
-                            </code>
-                        </li>
-                        <li>Automatic QR Code generation</li>
-                        <li>and much more!</li>
-                    </ul>
-                </section>
-                <section>
-                    <h1>CUSTOM TOKYONIGHT THEME</h1>
-                    <h2 class="fragment">THAT HAS</h2>
-                    <h3 class="fragment">MULTI</h3>
-                    <h4 class="fragment">LEVEL</h4>
-                    <h5 class="fragment">HEADING</h5>
-                    <h6 class="fragment">COLORS</h6>
-                    <h6>
-                        Thanks to this project
-                        <a
-                            href="https://github.com/tcmmichaelb139/obsidian-tokyonight">
-                            
-                        </a>
-                        for the colorscheme!
-                    </h6>
-                </section>
-                <section>
-                    <section>
-                        <h1>Tailwind CSS</h1>
-                        <div class="grid grid-cols-2 gap-8">
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div class="col-span-2">
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h1>Custom classes</h1>
-                        <div class="grid grid-cols-3 gap-8">
-                            <div class="border-r">
-                                <h5>border-r</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-o">
-                                <h5>border-o</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-y">
-                                <h5>border-y</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-                <section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <div>
-                            Now also has Tokyo Night
-                            <code>highlight.js</code>
-                            highlighting implementation
-                        </div>
-                        <pre><code data-trim data-noescape>
-var foo = {
-    bar: function () {
-             alert("Hello, World!");
-         }
-};	
-					</code></pre>
-                    </section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <h5>Inline code highlighting is now also supported!</h5>
-                        <p>
-                            Just wrap your code with
-                            <code>&lt;code&gt;</code>
-                            tag and get highlighting like this
-                            <code class="js">
-                                const foo = () => {return bar}
-                            </code>
-                            !
-                        </p>
-                    </section>
-                </section>
-                <section>
-                    <h1>Mermaid for beautiful diagrams!</h1>
-                    <div class="mermaid">
-                        <pre>
-						erDiagram
-    CUSTOMER ||--o{ ORDER : ""
-    CUSTOMER {
-        string name
-        string custNumber
-        string sector
-    }
-    ORDER ||--|{ LINE-ITEM : contains
-    ORDER {
-        int orderNumber
-        string deliveryAddress
-    }
-    LINE-ITEM {
-        string productCode
-        int quantity
-        float pricePerUnit
-    }
-    ORDER ||--|{ STUDENT : contains
-    STUDENT {
-        int orderNumber
-        string deliveryAddress
-    }
-						</pre
-                        >
-                    </div>
-                    <h4>
-                        Check documentation
-                        <a href="https://mermaid.js.org/config/usage.html">
-                            here
-                        </a>
-                        !
-                    </h4>
-                </section>
-                <section>
-                    <h1>Now supports Nerd font icons!</h1>
-                    <div>Nerdy project that adds icons to font itself</div>
-                    <h6>
-                        Checkout their site for icons like this
-                        <a href="https://www.nerdfonts.com/">󰖟</a>
-                        !
-                    </h6>
-                </section>
-                <section>
-                    <h1>Now supports automatic QRCode generation!</h1>
-                    <div>
-                        With GoQR you can just add data-type and alt attributes
-                        to your
-                        <code class="html">
-                            &lt;img src="https://goqr.me/" data-type="qrcode" /
-                            &gt;
-                        </code>
-                        tag!
-                    </div>
+                    <h1>Основы адаптивного веб-дизайна</h1>
                     <img
                         class="r-stretch"
-                        src="https://goqr.me/"
+                        src="https://ktkv-presentations.github.io/uidev-9"
                         data-type="qrcode" />
                 </section>
                 <section>
-                    <h1>New changes on the way!</h1>
+                    <section>
+                        <h1>Адаптивный веб-дизайн</h1>
+                        <h4>Adaptive Web Design (RWD)</h4>
+                        <p>
+                            подход к разработке сайтов, при котором веб-страницы
+                            автоматически подстраиваются под размер экрана
+                            пользователя
+                        </p>
+                        <img src="assets/rwb.png" class="r-stretch" alt="" />
+                    </section>
+                    <section>
+                        <h1>Принципы адаптивного дизайна</h1>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">Гибкие макеты</div>
+                            <div class="border-b">Медиазапросы</div>
+                            <div class="border-b col-span-2">
+                                Гибкие изображения и медиа
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Гибкие макеты</h1>
+                        <p>
+                            позволяет элементам интерфейса изменять свои размеры
+                            в зависимости от ширины экрана
+                        </p>
+                        <p>
+                            <em>
+                                Гибкие макеты используют относительные единицы
+                                измерения (%, vw, vh, em, rem), позволяя
+                                контейнерам изменять размеры пропорционально
+                                экрану.
+                            </em>
+                        </p>
+                        <pre><code data-trim class="css">
+.container {
+  width: 80%;
+  max-width: 1200px;
+}
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h1>Главная проблема</h1>
+                        <p>
+                            <em>
+                                Мы должны стараться избегать горизонтальной
+                                прокрутки, так как у десктопного пользователя
+                                колесо мышки работает по вертикали
+                            </em>
+                        </p>
+                        <hr />
+                        <h1>Рекомендации</h1>
+                        <ul>
+                            <li>Используйте % и vw для ширины контейнеров</li>
+                            <li>Используйте rem и em для шрифтов</li>
+                            <li>
+                                Комбинируйте разные единицы для лучшего
+                                результата
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Breakpoints</h1>
+                        <p>
+                            точки на экране, в которых макет сайта должен
+                            изменяться
+                        </p>
+                        <p>
+                            <em>
+                                зависят от устройства, на котором сайт
+                                просматривается, и от ширины экрана
+                            </em>
+                        </p>
+                        <table>
+                            <thead>
+                                <td>Брейкпоинт</td>
+                                <td>Устройство</td>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>320px</code></td>
+                                    <td>
+                                        для мобильных телефонов в портретной
+                                        ориентации
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><code>480px</code></td>
+                                    <td>
+                                        для мобильных телефонов в ландшафтной
+                                        ориентации
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><code>768px</code></td>
+                                    <td>для планшетов</td>
+                                </tr>
+                                <tr>
+                                    <td><code>1024px</code></td>
+                                    <td>для десктопов с малым экраном</td>
+                                </tr>
+                                <tr>
+                                    <td><code>1200px+</code></td>
+                                    <td>для десктопов с большим экраном</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <em>
+                            Не обязательно использовать эти брейкпоинты, это
+                            просто самые распространенные
+                        </em>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Медиазапросы</h1>
+                        <p>
+                            позволяют изменять стиль страницы в зависимости от
+                            различных характеристик устройства
+                        </p>
+                        <pre><code data-trim class="css">
+@media условие {
+  /* CSS-правила */
+}
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Условия</h3>
+                        <h4>Основанные на пикселях</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">
+                                <h4><code>max-width</code></h4>
+                                <p>
+                                    ширина экрана меньше или равна заданному
+                                    значению
+                                </p>
+                            </div>
+                            <div class="border-b">
+                                <h4><code>min-width</code></h4>
+                                <p>
+                                    ширина экрана больше или равна заданному
+                                    значению
+                                </p>
+                            </div>
+                            <div class="border-b">
+                                <h4><code>max-height</code></h4>
+                                <p>
+                                    для изменения стилей на основе высоты экрана
+                                </p>
+                            </div>
+                            <div class="border-b">
+                                <h4><code>min-height:</code></h4>
+                                <p>
+                                    для изменения стилей на основе минимальной
+                                    высоты экрана
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3>Условия</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <h4>
+                                    Портрет (
+                                    <code>portrait</code>
+                                    ) или ландшафт (
+                                    <code>landscape</code>
+                                    )
+                                </h4>
+                                <div class="border-b">
+                                    <h4><code>orientation</code></h4>
+                                    <p>для определения ориентации устройства</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h4>
+                                    Полтность пикселей (
+                                    <code>dpi</code>
+                                    )
+                                </h4>
+                                <div class="border-b">
+                                    <h4><code>resolution</code></h4>
+                                    <p>для определения плотности пикселей</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h1>Пример использования</h1>
+                        <pre class="r-stretch"><code data-trim class="css">
+@media (max-width: 320px) {
+  /* Стили для экранов менее 320px */
+  .container {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  /* Стили для экранов от 321px до 768px */
+  .container {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 769px) {
+  /* Стили для экранов больше 768px */
+  .container {
+    font-size: 16px;
+  }
+}
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h1>Каскадирование стилей</h1>
+                        <p>
+                            стили, которые идут после медиазапроса, могут
+                            перекрывать ранее применённые
+                        </p>
+                        <em>
+                            То есть общие или основные стили пишутся до медиа
+                            запроса
+                        </em>
+                        <pre><code data-trim class="css">
+.container {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    font-size: 14px;
+  }
+}
+                        </code></pre>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Гибкие изображения и медиа</h1>
+                        <h4>Проблема фиксированных изображений</h4>
+                        <ul>
+                            <li>
+                                На мобильных устройствах они выходят за пределы
+                                экрана.
+                            </li>
+                            <li>
+                                Они загружаются в максимальном разрешении, даже
+                                если используются на маленьком экране, что
+                                увеличивает время загрузки.
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h1>Гибкие размеры медиа</h1>
+                        <p>
+                            Картинки, видео и другие медиафайлы должны
+                            адаптироваться к размеру экрана
+                        </p>
+                        <pre><code data-trim class="css">
+img {
+    max-width: 100%;
+    width: 30vw;
+    height: auto;
+}
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h1>Адаптивное разрешение медиа</h1>
+                        <p>
+                            Для ускорения времени загрузки можно использовать
+                            определенные размеры изображений, в зависимости от
+                            размера экрана
+                        </p>
+                        <pre><code data-trim class="html">
+&lt;picture&gt;
+      &lt;source media="(max-width: 800px)" srcset="elva-480w-close-portrait.jpg" /&gt;
+      &lt;source media="(max-width: 1000px)" srcset="elva-1000w.jpg" /&gt;
+      &lt;img src="elva-1400w.jpg" alt="Chris standing up holding his daughter Elva" /&gt;
+&lt;/picture&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h4>
+                            Тег
+                            <code>picture</code>
+                        </h4>
+                        <p>
+                            обрабатывает несколько источников изображений,
+                            выбираемых на основе условий, указанных в атрибуте
+                            media
+                        </p>
+                        <hr />
+                        <h4>
+                            Тег
+                            <code>source</code>
+                        </h4>
+                        <p>
+                            задает альтернативные изображения для разных условий
+                        </p>
+                        <hr />
+                        <em>
+                            <code>img</code>
+                            служит как "резервный" вариант изображения, если ни
+                            одно из условий в элементах
+                            <source />
+                            не выполнено
+                        </em>
+                        <pre><code data-trim class="html">
+&lt;picture&gt;
+      &lt;source media="(max-width: 800px)" srcset="elva-480w-close-portrait.jpg" /&gt;
+      &lt;img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva" /&gt;
+&lt;/picture&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h1>
+                            <a
+                                href="https://mdn.github.io/learning-area/html/multimedia-and-embedding/responsive-images/responsive.html">
+                                Пример
+                            </a>
+                        </h1>
+                    </section>
+                    <section>
+                        <h1>Видео работают альтернативно с изображениями</h1>
+                        <pre><code data-trim class="html">
+&lt;video&gt;
+  &lt;source src="video-small.mp4" media="(max-width: 600px)"&gt;
+  &lt;source src="video-medium.mp4" media="(max-width: 1200px)"&gt;
+  &lt;source src="video-large.mp4"&gt;
+&lt;/video&gt;
+                        </code></pre>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Гибкие сетки</h1>
+                        <h3>Использование Flexbox для адаптивных макетов</h3>
+                        <p>
+                            Благодаря свойству
+                            <code>flex-wrap</code>
+                            элементы могут перемещаться согласно тому, влезают
+                            ли они в контейнер
+                        </p>
+                        <pre><code data-trim class="css">
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h1>Гибкие сетки</h1>
+                        <h3>Использование Grid для адаптивных макетов</h3>
+                        <h4>
+                            1.
+                            <code class="css">fr</code>
+                        </h4>
+                        <p>
+                            единица измерения в CSS Grid, которая позволяет
+                            распределить доступное пространство между элементами
+                            сетки
+                        </p>
+                        <pre><code data-trim class="css">
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+}
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h1>Гибкие сетки</h1>
+                        <h3>Использование Grid для адаптивных макетов</h3>
+                        <h4>
+                            2.
+                            <code class="css">auto-fit</code>
+                            и
+                            <code class="css">auto-fill</code>
+                        </h4>
+                        <p>
+                            функции, которые можно использовать с
+                            <code class="css">grid-template-columns</code>
+                            или
+                            <code class="css">grid-template-rows</code>
+                            для создания динамических макетов, которые
+                            адаптируются к доступному пространству
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">
+                                <h5><code class="css">auto-fill</code></h5>
+                                <p>
+                                    Заполняет доступное пространство как можно
+                                    большим количеством колонок (или строк),
+                                    используя заданные размеры
+                                </p>
+                            </div>
+                            <div class="border-b">
+                                <h5><code class="css">auto-fit</code></h5>
+                                <p>
+                                    Отличается тем, что пустое пространство
+                                    будет занимать автоматические (например,
+                                    пустые) элементы
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h4><code class="css">auto-fill</code></h4>
+                        <pre><code data-trim class="css">
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+                        </code></pre>
+                        <em>
+                            Когда достигаем верхней границы (всем элементам
+                            хватает места в один ряд), то появляются "пустые"
+                            строки
+                        </em>
+                        <hr />
+                        <h4><code class="css">auto-fit</code></h4>
+                        <pre><code data-trim class="css">
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+                        </code></pre>
+                        <em>Растягивает элементы на всю ширину контейнера</em>
+                    </section>
+                    <section>
+                        <h1>
+                            <a
+                                href="https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/">
+                                Пример
+                            </a>
+                        </h1>
+                    </section>
+
+                    <section>
+                        <h1>Адаптация колонок и отступов в CSS Grid</h1>
+                        <h4><code class="css">minmax()</code></h4>
+                        <p>
+                            можно задавать минимальную и максимальную ширину или
+                            высоту для колонок или строк в сетке
+                        </p>
+                        <p>
+                            <em>
+                                Применимо для всех элементов, не только для grid
+                                системы
+                            </em>
+                        </p>
+                        <pre><code data-trim class="css">
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 20px;
+}
+
+img {
+    width: minmax(100%, 800px)
+}
+                    </code></pre>
+                    </section>
+                    <section>
+                        <h4><code class="css">gap</code></h4>
+                        <em>
+                            Ранее назывался
+                            <code class="css">grid-gap</code>
+                        </em>
+                        <p>устанавливает отступы между элементами сетки</p>
+                        <pre><code data-trim class="css">
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+                    </code></pre>
+                    </section>
+                    <section>
+                        <h4><code class="css">grid-auto-flow</code></h4>
+                        <p>
+                            позволяет управлять порядком, в котором элементы
+                            будут размещаться в сетке
+                        </p>
+                        <pre><code data-trim class="css">
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: row dense;
+}
+                    </code></pre>
+                    </section>
+                    <section>
+                        <h4><code class="css">clamp()</code></h4>
+                        <p>
+                            позволяет ограничивать значение, определяя
+                            минимальный, предпочтительный и максимальный пределы
+                        </p>
+                        <pre><code data-trim class="css">
+clamp(min, value, max)
+                    </code></pre>
+                        <ul>
+                            <li>
+                                <code>min</code>
+                                — минимальное значение, которое будет
+                                применяться, если вычисленное значение меньше
+                                этого
+                            </li>
+                            <li>
+                                <code>value</code>
+                                — предпочтительное значение, которое обычно
+                                используется, если оно находится между
+                                минимальным и максимальным значениями
+                            </li>
+                            <li>
+                                <code>max</code>
+                                — максимальное значение, которое будет
+                                применяться, если вычисленное значение больше
+                                этого
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>
+                            Примеры использования
+                            <code class="css">clamp()</code>
+                        </h4>
+                        <pre><code data-trim class="css">
+.container {
+  width: clamp(300px, 50%, 800px);
+  margin: 0 auto;
+}
+                        </code></pre>
+                        <pre><code data-trim class="css">
+.element {
+  padding: clamp(10px, 2vw, 20px);
+}
+                        </code></pre>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>DevTools</h1>
+                        <p>
+                            набор инструментов, встроенных в большинство
+                            современных браузеров, который позволяет
+                            разработчикам взаимодействовать с веб-страницами,
+                            отлаживать их, анализировать производительность и
+                            изменять стили и структуру в реальном времени
+                        </p>
+                        <h4>Возможности DevTools</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">
+                                Просмотр и изменение HTML и CSS
+                            </div>
+                            <div class="border-b">Отладка JavaScript</div>
+                            <div class="border-b">
+                                Анализ производительности страницы
+                            </div>
+                            <div class="border-b">
+                                Мониторинг сетевых запросов
+                            </div>
+                            <div class="border-b">
+                                Просмотр консольных сообщений и ошибок
+                            </div>
+                            <div class="border-b">
+                                Тестирование адаптивности и респонсивности
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>Инспектор (Elements)</h4>
+                        <p>Применение:</p>
+                        <ul>
+                            <li>
+                                <b>Просмотр HTML-структуры</b>
+                                <small>
+                                    Вкладка "Elements" показывает весь HTML-код
+                                    страницы в виде дерева. Вы можете "щелкнуть"
+                                    на любой элемент, чтобы увидеть его
+                                    атрибуты, классы и стили.
+                                </small>
+                            </li>
+                            <li>
+                                <b>Редактирование CSS</b>
+                                <small>
+                                    В нижней части панели находится раздел
+                                    стилей, где можно редактировать CSS-свойства
+                                    в реальном времени. Например, можно изменить
+                                    шрифт, цвет или размер элементов.
+                                </small>
+                            </li>
+                            <li>
+                                <b>Изменение HTML</b>
+                                <small>
+                                    Вы можете редактировать HTML-код прямо в
+                                    браузере, добавлять или удалять элементы,
+                                    чтобы увидеть, как это влияет на внешний вид
+                                    страницы.
+                                </small>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Консоль (Console)</h4>
+                        <p>Применение:</p>
+                        <ul>
+                            <li>
+                                <b>Просмотр ошибок</b>
+                                <small>
+                                    Все ошибки JavaScript и предупреждения будут
+                                    отображаться в консоли
+                                </small>
+                            </li>
+                            <li>
+                                <b>Выполнение кода</b>
+                                <small>
+                                    В консоли можно тестировать JavaScript,
+                                    вводя команды и получая результат в реальном
+                                    времени
+                                </small>
+                            </li>
+                            <li>
+                                <b>Логирование</b>
+                                <small>
+                                    Вы можете добавлять console.log() в ваш код,
+                                    чтобы отслеживать значения переменных или
+                                    логику выполнения
+                                </small>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Сетевые запросы (Network)</h4>
+                        <p>Применение:</p>
+                        <ul>
+                            <li>
+                                <b>Просмотр запросов</b>
+                                <small>
+                                    Вы можете увидеть, какие ресурсы загружаются
+                                    (изображения, скрипты, стили), а также какой
+                                    статус ответа от сервера
+                                </small>
+                            </li>
+                            <li>
+                                <b>Анализ времени отклика</b>
+                                <small>
+                                    Это поможет определить, какие запросы
+                                    занимают больше времени, что может повлиять
+                                    на производительность страницы
+                                </small>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Отладка JavaScript (Sources)</h4>
+                        <p>Применение:</p>
+                        <ul>
+                            <li>
+                                <b>Точки остановки</b>
+                                <small>
+                                    Вы можете поставить точки останова
+                                    (breakpoints) в коде, чтобы при его
+                                    выполнении программа остановилась, и вы
+                                    могли исследовать переменные и логику
+                                </small>
+                            </li>
+                            <li>
+                                <b>Пошаговое выполнение</b>
+                                <small>
+                                    Это помогает вам отслеживать, как
+                                    выполняется код, и находить ошибки
+                                </small>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Проверка адаптивности (Device Mode)</h4>
+                        <p>Применение:</p>
+                        <ul>
+                            <li>
+                                <b>Переключение в режим устройств</b>
+                                <small>
+                                    В верхней части DevTools есть иконка для
+                                    переключения в режим мобильного устройства.
+                                    Это позволяет эмулировать различные
+                                    устройства, такие как смартфоны и планшеты
+                                </small>
+                            </li>
+                            <li>
+                                <b>Проверка адаптивных макетов</b>
+                                <small>
+                                    Вы можете быстро проверить, как страница
+                                    будет выглядеть на экранах с разными
+                                    разрешениями
+                                </small>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Производительность (Performance)</h4>
+                        <p>Применение:</p>
+                        <ul>
+                            <li>
+                                <b>Запись производительности</b>
+                                <small>
+                                    Вы можете начать запись производительности и
+                                    увидеть, сколько времени тратится на
+                                    различные этапы рендеринга страницы, что
+                                    поможет найти узкие места
+                                </small>
+                            </li>
+                            <li>
+                                <b>Анализ времени загрузки</b>
+                                <small>
+                                    Узнайте, сколько времени занимает загрузка
+                                    ресурсов и их обработка
+                                </small>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Анализ стилей и вычислений (Computed Styles)</h4>
+                        <p>Применение:</p>
+                        <ul>
+                            <li>
+                                <b>Вкладка "Computed"</b>
+                                <small>
+                                    Показывает окончательные стили для
+                                    выбранного элемента, включая значения,
+                                    которые могут быть получены через
+                                    наследование или с помощью медиазапросов
+                                </small>
+                            </li>
+                        </ul>
+                    </section>
                 </section>
             </div>
         </div>
@@ -396,4 +964,3 @@ var foo = {
         </script>
     </body>
 </html>
-
